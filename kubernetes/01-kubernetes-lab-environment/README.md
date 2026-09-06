@@ -44,11 +44,11 @@ The initial launch failed because nested virtualization was not enabled for the 
 
 #### Resolution
 
-Nested virtualization was enabled for the VM.
-
-After enabling nested virtualization, open the VM's processor settings and, under **Virtualization engine**, enable:
+Open the VM's processor settings and, under **Virtualization engine**, enable:
 
 **“Virtualize Intel VT-x/EPT or AMD-V/RVI”**
+
+This enables nested virtualization for the VM.
 
 After enabling this option, Rancher Desktop started successfully.
 
