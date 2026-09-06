@@ -6,12 +6,25 @@ Set up a local Kubernetes learning environment inside an Ubuntu-based virtual ma
 
 ## Environment
 
-* Ubuntu-based virtual machine
-* Xubuntu desktop environment
+### Virtual Machine Resources
+
+| Resource         |                           Allocation |
+| ---------------- | -----------------------------------: |
+| CPU              |                              2 vCPUs |
+| Memory           |                             8 GB RAM |
+| Storage          |                                30 GB |
+| Operating System | Ubuntu + Xubuntu desktop environment |
+
+### Software
+
 * Rancher Desktop
 * Kubernetes
 * `kubectl`
 * Homebrew for Linux
+
+### Additional Requirement
+
+Nested virtualization must be enabled because Rancher Desktop is running inside a virtual machine.
 
 ## Setup
 
@@ -33,7 +46,11 @@ The initial launch failed because nested virtualization was not enabled for the 
 
 Nested virtualization was enabled for the VM.
 
-After enabling nested virtualization, Rancher Desktop started successfully.
+After enabling nested virtualization, open the VM's processor settings and, under **Virtualization engine**, enable:
+
+**“Virtualize Intel VT-x/EPT or AMD-V/RVI”**
+
+After enabling this option, Rancher Desktop started successfully.
 
 ### 3. Install Homebrew
 
