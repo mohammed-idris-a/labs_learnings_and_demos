@@ -23,7 +23,7 @@ The repository will evolve as I learn and work with different technologies.
 * 🐳 Docker
 * ☸️ Kubernetes
 
-### Future Areas
+### Planned Areas
 
 * ☁️ AWS
 * 🐧 Linux
@@ -50,17 +50,9 @@ More labs will be added as they are completed.
 
 ```text
 labs_learnings_and_demos/
-│
-├── docker/
 ├── kubernetes/
 │   └── 01-kubernetes-lab-environment/
 │       └── README.md
-│
-├── aws/
-├── linux/
-├── networking/
-├── automation/
-├── python/
 └── README.md
 ```
 
